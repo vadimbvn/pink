@@ -1,0 +1,23 @@
+.features-app {
+  padding-top: 46px;
+}
+
+.features-app__slogan {
+  @include headline;
+  color: $base-color;
+}
+
+.features-app__list {
+  @include list-reset;
+  background: $grey;
+}
+
+.features-app__title {
+  @include text-bold;
+  line-height: 24px;
+}
+
+.features-app__info {
+  @include text-info;
+  line-height: 24px;
+}

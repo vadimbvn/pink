@@ -1,0 +1,15 @@
+.main-nav {
+  font-family: "OpenSans Bold", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: $white;
+  }
+

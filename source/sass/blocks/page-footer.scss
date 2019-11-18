@@ -1,0 +1,10 @@
+.social__list {
+  @include list-reset;
+}
+
+.copyright__text {
+  font-family: "OpenSans Regular", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $base-color;
+}

@@ -1,0 +1,26 @@
+.download-app {
+  padding-top: 28px;
+  background-color: $base-color;
+  color: $white;
+}
+
+.download-app__slogan {
+  font-family: "OpenSans Light", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.download-app__list {
+  @include list-reset;
+}
+
+.download-app__item a {
+  text-decoration: none;
+}
+
+.download-app__info {
+  font-family: "OpenSans Light", sans-serif;
+  font-size: 14px;
+}
+
+
