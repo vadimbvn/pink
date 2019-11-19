@@ -1,0 +1,25 @@
+@mixin headline {
+  font-family: "OpenSans Light", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: $white;
+}
+
+@mixin text-info {
+  font-family: "OpenSans Regular", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: $base-color;
+}
+
+@mixin text-bold {
+  font-family: "OpenSans Bold", sans-serif;
+  font-size: 18px;
+  color: $black;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
