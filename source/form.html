@@ -35,7 +35,94 @@
       <div class="main-background">
         <h2 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
-      <section class="contest"></section>
+      <section class="contest">
+        <p class="contest__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        Пожалуйста, заполните форму ниже:</p>
+        <form class="contest__form">
+          <fieldset class="contest__fieldset contest__fieldset--name">
+            <ul class="contest__list contest__list--name">
+              <li>
+                <label for="user-surname">Фамилия:</label>
+                <input type="text" name="usersurname" id="user-surname" placeholder="Укажите фамилию *">
+              </li>
+              <li>
+                <label for="user-name">Имя:</label>
+                <input type="text" name="username" id="user-name" placeholder="Укажите ваше имя*">
+              </li>
+              <li>
+                <label for="user-patronymic">Отчество:</label>
+                <input type="text" name="userpatronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__fieldset contest__fieldset--checkbox">
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <ul class="contest__list contest__list--checkbox">
+              <li>
+                <input class="visually-hidden"  type="checkbox" name="selfie" id="selfie" checked>
+                <label for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" name="beach" id="beach">
+                <label for="beach">Обгорел на пляже</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" name="norris" id="norris">
+                <label for="norris">Видел Чака Норриса</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" name="gift" id="gift">
+                <label for="gift">Накупил сувениров</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" name="tower" id="tower">
+                <label for="tower">Удержал башню</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="checkbox" name="hotel" id="hotel">
+                <label for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__fieldset contest__fieldset--contacts">
+            <ul class="contest__list contst__list--contacts">
+              <li>
+                <label for="user-phone">Номер телефона</label>
+                <input type="tel" name="userphone" id="user-phone" placeholder="Номер, пожалуйста">
+              </li>
+              <li>
+                <label for="user-email">Адрес почты</label>
+                <input type="email" name="useremail" id="user-email" placeholder="Введите почту *">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__fieldset contest__fieldset--radio">
+            <legend>С каким приложением путешествовали?</legend>
+            <ul class="contest__list contest__list--radio">
+              <li>
+                <input class="visually-hidden" type="radio" name="pinkios" id="pink-ios" checked>
+                <label for="pink-ios">Pink для iOS</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="radio" name="pinkandroid" id="pink-android">
+                <label for="pink-android">Pink на Android</label>
+              </li>
+              <li>
+                <input class="visually-hidden" type="radio" name="pinkwindows" id="pink-windows">
+                <label for="pink-windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__fieldset contest__fieldset--textarea">
+            <label for="user-review">Опишите свои эмоции</label>
+            <textarea name="userreview" id="user-review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="contest__button" type="submit">Отправить форму</button>
+          <p class="contest__text">
+            <span>*</span> - обязательные поля
+          </p>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo">
