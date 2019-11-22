@@ -31,7 +31,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Фотографии пользователей Пинк</h1>
+      <h1 class="visually-hidden">Галерея фотографий</h1>
       <div class="main-background">
         <h2 class="page-main__title">Фотографии пользователей</h2>
       </div>
@@ -104,6 +104,34 @@
             <span class="user-photo__like">Нравится: 2560</span>
           </li>
         </ul>
+      </section>
+      <section class="photo-edit">
+        <h2 class="visually-hidden">Редактирование фотографий</h2>
+        <p class="photo-edit__slogan!">Затмите их всех!
+        Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="photo-edit__wrapper-image">
+          <img class="photo-edit__image" src="https://via.placeholder.com/150x150" alt="Фотография для редактирования">
+        </div>
+        <form class="photo-edit__form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="photo-edit__instrument">
+            <li>
+              <button class="photo-edit__crop photo-edit__crop--active" type="button">Обрезать</button>
+            </li>
+            <li>
+              <button class="photo-edit__fill" type="button">Изменить заливку</button>
+            </li>
+            <li>
+              <button class="photo-edit__contrast" type="button">Изменить контрастность</button>
+            </li>
+          </ul>
+          <div class="photo-edit__wrapper-range">
+            <input class="photo-edit__range" type="range">
+          </div>
+          <div class="photo-edit__buttons">
+            <button class="photo-edit__post button" type="submit">Запостить</button>
+            <button class="photo-edit__cancel button" type="button">Отмена</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
