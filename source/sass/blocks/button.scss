@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  width: 280px;
+  font-weight: 700;
+  text-align: center;
+  color: $white;
+  border: 3px solid $white;
+  border-radius: 50px;
+
+  &--submit {
+    background-color: $grey;
+    color: $pink;
+    border-color: $pink;
+  }
+
+  &--reset {
+    background-color: $grey;
+    color: transparentize($base-color, 0.9);
+    border-color: transparentize($base-color, 0.9);
+  }
+
+  &--green {
+    background-color: $green;
+    border-radius: 3px;
+    border: 2px solid $green;
+
+  }
+}

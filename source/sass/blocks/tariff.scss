@@ -1,0 +1,25 @@
+.tariff__list {
+  @include list-reset;
+}
+
+.tariff__info {
+  background-color: $base-color;
+  color: $white;
+}
+
+.tariff__type  {
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.tariff__price {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.tariff__set {
+  font-size: 14px;
+  line-height: 30px;
+  background-color: $white;
+  color: $base-color;
+}
