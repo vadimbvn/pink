@@ -18,10 +18,10 @@
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a>Фотографии</a>
+              <a href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a>Конкурс</a>
             </li>
             <li class="site-list__item">
               <a href="#">Html Academy</a>
@@ -38,86 +38,86 @@
       <section class="contest">
         <p class="contest__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         Пожалуйста, заполните форму ниже:</p>
-        <form class="contest__form">
-          <fieldset class="contest__fieldset contest__fieldset--name">
-            <ul class="contest__list contest__list--name">
+        <form class="contest__form form">
+          <fieldset class="contest__fieldset form__group">
+            <ul class="contest__list form__list--name">
               <li>
-                <label for="user-surname">Фамилия:</label>
-                <input type="text" name="usersurname" id="user-surname" placeholder="Укажите фамилию *">
+                <label class="form__label" for="user-surname">Фамилия:</label>
+                <input class="form__input" type="text" name="usersurname" id="user-surname" placeholder="Укажите фамилию *">
               </li>
               <li>
-                <label for="user-name">Имя:</label>
-                <input type="text" name="username" id="user-name" placeholder="Укажите ваше имя*">
+                <label class="form__label" for="user-name">Имя:</label>
+                <input class="form__input" type="text" name="username" id="user-name" placeholder="Укажите ваше имя*">
               </li>
               <li>
-                <label for="user-patronymic">Отчество:</label>
-                <input type="text" name="userpatronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
+                <label class="form__label" for="user-patronymic">Отчество:</label>
+                <input class="form__input" type="text" name="userpatronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest__fieldset contest__fieldset--checkbox">
+          <fieldset class="contest__fieldset form__group">
             <legend>Ваши безбашенные достижения в путешествии</legend>
-            <ul class="contest__list contest__list--checkbox">
+            <ul class="contest__list form__list--checkbox">
               <li>
-                <input class="visually-hidden"  type="checkbox" name="selfie" id="selfie" checked>
-                <label for="selfie">Сделал селфи с акулой</label>
+                <input class="form__checkbox  visually-hidden" class="visually-hidden"  type="checkbox" name="selfie" id="selfie" checked>
+                <label class="form__custom-checkbox" for="selfie">Сделал селфи с акулой</label>
               </li>
               <li>
-                <input class="visually-hidden" type="checkbox" name="beach" id="beach">
-                <label for="beach">Обгорел на пляже</label>
+                <input class="form__checkbox visually-hidden" class="visually-hidden" type="checkbox" name="beach" id="beach">
+                <label class="form__custom-checkbox" for="beach">Обгорел на пляже</label>
               </li>
               <li>
-                <input class="visually-hidden" type="checkbox" name="norris" id="norris">
-                <label for="norris">Видел Чака Норриса</label>
+                <input class="form__checkbox visually-hidden" class="visually-hidden" type="checkbox" name="norris" id="norris">
+                <label class="form__custom-checkbox" for="norris">Видел Чака Норриса</label>
               </li>
               <li>
-                <input class="visually-hidden" type="checkbox" name="gift" id="gift">
-                <label for="gift">Накупил сувениров</label>
+                <input class="form__checkbox visually-hidden" class="visually-hidden" type="checkbox" name="gift" id="gift">
+                <label class="form__custom-checkbox" for="gift">Накупил сувениров</label>
               </li>
               <li>
-                <input class="visually-hidden" type="checkbox" name="tower" id="tower">
-                <label for="tower">Удержал башню</label>
+                <input class="form__checkbox visually-hidden" class="visually-hidden" type="checkbox" name="tower" id="tower">
+                <label class="form__custom-checkbox" for="tower">Удержал башню</label>
               </li>
               <li>
-                <input class="visually-hidden" type="checkbox" name="hotel" id="hotel">
-                <label for="hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="contest__fieldset contest__fieldset--contacts">
-            <ul class="contest__list contst__list--contacts">
-              <li>
-                <label for="user-phone">Номер телефона</label>
-                <input type="tel" name="userphone" id="user-phone" placeholder="Номер, пожалуйста">
-              </li>
-              <li>
-                <label for="user-email">Адрес почты</label>
-                <input type="email" name="useremail" id="user-email" placeholder="Введите почту *">
+                <input class="form__checkbox visually-hidden" class="visually-hidden" type="checkbox" name="hotel" id="hotel">
+                <label class="form__custom-checkbox" for="hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest__fieldset contest__fieldset--radio">
+          <fieldset class="contest__fieldset form__group">
+            <ul class="contest__list form__list--contacts">
+              <li>
+                <label class="form__label" for="user-phone">Номер телефона</label>
+                <input class="form__input" type="tel" name="userphone" id="user-phone" placeholder="Номер, пожалуйста">
+              </li>
+              <li>
+                <label class="form__label" for="user-email">Адрес почты</label>
+                <input class="form__input" type="email" name="useremail" id="user-email" placeholder="Введите почту *">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__fieldset form__group">
             <legend>С каким приложением путешествовали?</legend>
-            <ul class="contest__list contest__list--radio">
+            <ul class="contest__list form__list--radio">
               <li>
-                <input class="visually-hidden" type="radio" name="pinkios" id="pink-ios" checked>
-                <label for="pink-ios">Pink для iOS</label>
+                <input class="form__radio visually-hidden" class="visually-hidden" type="radio" name="pinkios" id="pink-ios" checked>
+                <label class="form__custom-radio" for="pink-ios">Pink для iOS</label>
               </li>
               <li>
-                <input class="visually-hidden" type="radio" name="pinkandroid" id="pink-android">
-                <label for="pink-android">Pink на Android</label>
+                <input class="form__radio visually-hidden" class="visually-hidden" type="radio" name="pinkandroid" id="pink-android">
+                <label class="form__custom-radio" for="pink-android">Pink на Android</label>
               </li>
               <li>
-                <input class="visually-hidden" type="radio" name="pinkwindows" id="pink-windows">
-                <label for="pink-windows">Windows Phone</label>
+                <input class="form__radio visually-hidden" class="visually-hidden" type="radio" name="pinkwindows" id="pink-windows">
+                <label class="form__custom-radio" for="pink-windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest__fieldset contest__fieldset--textarea">
-            <label for="user-review">Опишите свои эмоции</label>
-            <textarea name="userreview" id="user-review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <fieldset class="contest__fieldset form__group">
+            <label class="form__label" for="user-review">Опишите свои эмоции</label>
+            <textarea class="form__textarea" name="userreview" id="user-review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="contest__button" type="submit">Отправить форму</button>
+          <button class="contest__button button button--green" type="submit">Отправить форму</button>
           <p class="contest__text">
             <span>*</span> - обязательные поля
           </p>
@@ -143,7 +143,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="#">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
