@@ -3,8 +3,9 @@
 }
 
 .features-app__slogan {
-  @include headline;
-  color: $base-color;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
 .features-app__list {
@@ -13,11 +14,13 @@
 }
 
 .features-app__title {
-  @include text-bold;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 24px;
 }
 
 .features-app__info {
-  @include text-info;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
 }

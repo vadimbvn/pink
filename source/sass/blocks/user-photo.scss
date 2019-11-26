@@ -1,5 +1,7 @@
 .user-photo__text {
-  @include text-info;
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 .user-photo__list {
@@ -12,30 +14,25 @@
   color: $base-color;
 }
 
-.user-photo__item a {
-  text-decoration: none;
-}
-
 .user-photo__author {
-  font-family: "OpenSans Bold", sans-serif;
   font-size: 14px;
+  font-weight: 700;
   line-height: 24px;
 }
 
 .user-photo__time {
-  font-family: "OpenSans Light", sans-serif;
   font-size: 12px;
+  font-weight: 300;
   line-height: 24px;
 }
 
 .user-photo__info {
-  font-family: "OpenSans Regular", sans-serif;
+  margin: 0;
   font-size: 14px;
   list-style: 25px;
 }
 
 .user-photo__like {
-  font-family: "OpenSans Regular", sans-serif;
   font-size: 12px;
   list-style: 24px;
   color: $pink;

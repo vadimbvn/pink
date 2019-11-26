@@ -1,3 +1,56 @@
-.contest {
-  background-color: $base-color;
+.contest__slogan {
+  padding-top: 50px;
+  padding-bottom: 45px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contest__list {
+  @include list-reset;
+}
+
+.form__group {
+  padding: 0;
+  border: none;
+}
+
+.form__label {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.form__input {
+  line-height: 30px;
+  border: 2px solid $border-grey;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: $base-color;
+}
+
+.form__group legend {
+  font-size: 14px;
+  line-height: 18px;
+  color: $pink;
+}
+
+.form__textarea {
+  line-height: 30px;
+  border: 2px solid $border-grey;
+}
+
+.form__textarea::-webkit-input-placeholder {
+  color: $base-color;
+}
+
+.contest__text {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest__text span {
+  color: $pink;
 }

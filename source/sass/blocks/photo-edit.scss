@@ -1,0 +1,13 @@
+.photo-edit {
+  padding-top: 45px;
+}
+
+.photo-edit__slogan {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.photo-edit__list {
+  @include list-reset;
+}
