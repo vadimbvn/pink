@@ -1,12 +1,27 @@
 .main-nav {
   font-weight: 700;
   line-height: 32px;
+  text-transform: uppercase;
 }
 
 .main-nav__list {
   @include list-reset;
+  text-align: center;
 }
 
-.site-list__item a {
-  color: $white;
+@media (min-width: $desktop-width) {
+  .main-nav {
+    font-weight: 400;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    margin-left: 170px;
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

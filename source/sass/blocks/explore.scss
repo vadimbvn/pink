@@ -1,0 +1,64 @@
+.explore {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .explore {
+    display: block;
+    padding-top: 102px;
+    padding-bottom: 70px;
+  }
+
+  .explore__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .explore__section {
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  .explore__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: $black;
+  }
+
+  .explore__info {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .explore__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: $pink;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .explore {
+    background-color: $grey;
+  }
+
+  .explore__title {
+    line-height: 30px;
+  }
+
+  .explore__section {
+    width: 531px;
+  }
+
+  .explore__info {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .explore__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

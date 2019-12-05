@@ -2,3 +2,18 @@
   background-color: $base-color;
   color: white;
 }
+
+.page-header__logo {
+  display: block;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    flex-direction: row;
+  }
+}

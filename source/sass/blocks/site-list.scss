@@ -1,0 +1,17 @@
+.site-list__item {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $black;
+  border-top: 1px solid $base-color;
+}
+
+.site-list__item a {
+  color: $white;
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    border: none;
+  }
+}
