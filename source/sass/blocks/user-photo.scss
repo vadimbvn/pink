@@ -1,11 +1,15 @@
 .user-photo__text {
   margin: 0;
+  margin-bottom: 55px;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
 }
 
 .user-photo__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
 }
 
 .user-photo__item {
@@ -36,4 +40,53 @@
   font-size: 12px;
   list-style: 24px;
   color: $pink;
+}
+
+.user-photo__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo__text {
+    margin-bottom: 80px;
+    font-size: 18px;
+  }
+
+  .user-photo__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .user-photo__item--panorama {
+    width: 620px;
+  }
+
+  .user-photo__wrapper {
+    width: 300px;
+
+    &--panorama {
+      width: 620px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photo__text {
+    margin-bottom: 92px;
+  }
+
+  .user-photo__item--panorama {
+    width: 940px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photo__wrapper {
+    &--panorama {
+      width: 920px;
+    }
+  }
 }
