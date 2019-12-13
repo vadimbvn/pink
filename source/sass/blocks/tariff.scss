@@ -1,25 +1,127 @@
-.tariff__list {
-  @include list-reset;
+
+.tariff {
+  padding-top: 145px;
+  background-color: $grey;
 }
 
-.tariff__info {
-  background-color: $base-color;
-  color: $white;
+.tariff__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.tariff__list {
+  display: block;
+  margin-left: -255px;
+  margin-bottom: 43px;
+  width: 850px;
+  border-collapse: collapse;
 }
 
 .tariff__type {
+  padding-top: 23px;
+  width: 276px;
   font-weight: 700;
   line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $base-color;
+  color: $white;
+
+  &--hide {
+    display: none;
+  }
 }
 
 .tariff__price {
+  padding-bottom: 21px;
   font-size: 24px;
+  font-weight: 300;
   line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $base-color;
+  color: $white;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.tariff__price p,
+.tariff__type p {
+  padding: 0;
+  margin: 0;
+}
+
+.tariff__content {
+  background-color: $white;
 }
 
 .tariff__set {
   font-size: 14px;
   line-height: 30px;
-  background-color: $white;
-  color: $base-color;
+  text-align: left;
+  border-right: 2px solid $border-grey;
+  border-bottom: 2px solid $border-grey;
+  border-left: 2px solid $border-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .tariff__list {
+    width: 620px;
+    margin-left: 0;
+  }
+
+  .tariff__type {
+    font-size: 16px;
+
+    &--hide {
+      width: 170px;
+      display: block;
+      background-color: $grey;
+    }
+  }
+
+  .tariff__price {
+    &--hide {
+      display: block;
+      background-color: $grey;
+    }
+  }
+
+  .tariff__set {
+    &--hide {
+      display: none;
+    }
+  }
+
+  .tariff__pink-filter,
+  .tariff__smile,
+  .tariff__coment {
+    border-right: 2px solid $border-grey;
+    border-bottom: 2px solid $border-grey;
+    border-left: 2px solid $border-grey;
+  }
+
+  .tariff__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariff__list {
+    width: 940px;
+  }
+
+  .tariff__type {
+    font-size: 18px;
+
+    &--hide {
+      width: 240px;
+    }
+  }
+
+  .tariff__price {
+    font-size: 24px;
+  }
 }

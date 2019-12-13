@@ -4,7 +4,7 @@
   text-transform: uppercase;
 }
 
-.main-nav__list {
+.main-nav__site-list {
   @include list-reset;
   text-align: center;
 }
@@ -18,7 +18,7 @@
     display: none;
   }
 
-  .main-nav__list {
+  .main-nav__site-list {
     margin-left: 170px;
     width: 620px;
     display: flex;

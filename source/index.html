@@ -15,7 +15,7 @@
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__site-list site-list">
               <li class="site-list__item">
                 <a>Главная</a>
               </li>
@@ -97,6 +97,7 @@
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
               <span class="reviews__author">Николай Петров</span>
+              <span class="reviews__info">25 лет, водитель трамвая</span>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
@@ -109,35 +110,75 @@
         </div>
       </section>
       <section class="tariff">
-        <div class="tariff__wrapper slider container">
-          <h2 class="visually-hidden">Тарифы</h2>
-          <ul class="tariff__list slider__list">
-            <li class="tariff_item slider__item--standart">
-              <table class="tariff__info">
-                <tr>
-                  <th class="tariff__type">
-                    <p>Стандарт</p>
-                  </th>
-                </tr>
-                <tr>
-                  <td class="tariff__price">
-                    <p>3,99 Usd</p>
-                  </td>
-                </tr>
-                <tbody class="tariff__set">
-                  <tr>
-                    <td>Розовый фильтр</td>
-                  </tr>
-                  <tr>
-                    <td>Смайлики</td>
-                  </tr>
-                  <tr>
-                    <td>Комментарии</td>
-                  </tr>
-                </tbody>
-              </table>
-            </li>
-          </ul>
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="container slider tariff__wrapper">
+          <table class="tariff__list">
+            <tr>
+              <th class="tariff__type tariff__type--hide"></th>
+              <th class="tariff__type tariff__type--base">
+                <p>База</p>
+              </th>
+              <td class="tariff__type tariff__type--standard">
+                <p>Стандарт</p>
+              </td>
+              <td class="tariff__type tariff__type--unlim">
+                <p>Анлим</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="tariff__price tariff__price--hide"></td>
+              <td class="tariff__price tariff__price--base">
+                <p>1,99 Usd</p>
+              </td>
+              <td class="tariff__price tariff__price--standard">
+                <p>3,99 Usd</p>
+              </td>
+              <td class="tariff__price tariff__price--unlim">
+                <p>9,99 Usd</p>
+              </td>
+            </tr>
+            <tbody class="tariff__content">
+              <tr>
+                <td class="tariff__set tariff__set--hide"></th>
+                <td class="tariff__set">Розовый фильтр</th>
+                <td class="tariff__pink-filter">
+                  <span class="">Да</span>
+                </td>
+                <td class="tariff__pink-filter">
+                  <span class="">Да</span>
+                </td>
+                <td class="tariff__pink-filter">
+                  <span class="">Да</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="tariff__set tariff__set--hide"></th>
+                <td class="tariff__set">Смайлики</th>
+                <td class="tariff__smile">
+                  <span class="">Нет</span>
+                </td>
+                <td class="tariff__smile">
+                  <span class="">Да</span>
+                </td>
+                <td class="tariff__smile">
+                  <span class="">Да</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="tariff__set tariff__set--hide"></th>
+                <td class="tariff__set">Комментарии</th>
+                <td class="tariff__comment">
+                  <span class="">Нет</span>
+                </td>
+                <td class="tariff__comment">
+                  <span class="">Нет</span>
+                </td>
+                <td class="tariff__comment">
+                  <span class="">Да</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <p class="tariff__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle slider__toggle--active" type="button">2</button>
@@ -149,27 +190,29 @@
         <div class="container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__title">Остались вопросы?Свяжитесь с нами!</p>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <p class="contacts__text">Звоните:</p>
-              <p class="contacts__info">
-                <a class="contacts__link" href="tel:+7(812)5556666">+7 (812) 555-66-66</a>
-              </p>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__text">Пишите:</p>
-              <p class="contacts__info">
-                <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </p>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__text">Приезжайте в гости:</p>
-              <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
-            </li>
-          </ul>
-          <div class="contacts__map">
-            <img src="https://via.placeholder.com/150x150" alt="ул. Большая Конюшенная, 19/8">
+          <div class="contacts__wrapper">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <p class="contacts__text">Звоните:</p>
+                <p class="contacts__info">
+                  <a class="contacts__link" href="tel:+7(812)5556666">+7 (812) 555-66-66</a>
+                </p>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__text">Пишите:</p>
+                <p class="contacts__info">
+                  <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </p>
+              </li>
+              <li class="contacts__item">
+                <p class="contacts__text">Приезжайте в гости:</p>
+                <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+              </li>
+            </ul>
           </div>
+            <div class="contacts__map">
+              <img src="https://via.placeholder.com/150x150" alt="ул. Большая Конюшенная, 19/8">
+            </div>
         </div>
       </section>
       <footer class="page-footer page-footer--index">

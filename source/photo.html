@@ -15,7 +15,7 @@
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__site-list site-list">
               <li class="site-list__item">
                 <a href="index.html">Главная</a>
               </li>
@@ -122,31 +122,35 @@
           </ul>
         </div>
       </section>
-      <section class="photo-edit container">
-        <h2 class="visually-hidden">Редактирование фотографий</h2>
-        <p class="photo-edit__slogan">Затмите их всех!
-        Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="photo-edit__wrapper-image">
-          <img class="photo-edit__image" src="https://via.placeholder.com/150x150" alt="Фотография для редактирования">
+      <section class="photo-edit">
+        <div class="container">
+          <h2 class="visually-hidden">Редактирование фотографий</h2>
+          <p class="photo-edit__slogan">Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!</p>
         </div>
-        <form class="photo-edit__form" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="photo-edit__list">
-            <li>
-              <button class="photo-edit__crop photo-edit__crop--active" type="button">Обрезать</button>
-            </li>
-            <li>
-              <button class="photo-edit__fill" type="button">Изменить заливку</button>
-            </li>
-            <li>
-              <button class="photo-edit__contrast" type="button">Изменить контрастность</button>
-            </li>
-          </ul>
-          <div class="photo-edit__range"></div>
-          <div class="photo-edit__buttons">
-            <button class="photo-edit__post button button--submit" type="submit">Запостить</button>
-            <button class="photo-edit__cancel button button--reset" type="reset">Отмена</button>
+          <div class="photo-edit__background">
+            <div class="photo-edit__wrapper container">
+              <img class="photo-edit__image" src="https://via.placeholder.com/150x150" alt="Фотография для редактирования">
+            <form class="photo-edit__form" action="https://echo.htmlacademy.ru" method="post">
+              <ul class="photo-edit__list">
+                <li>
+                  <button class="photo-edit__crop photo-edit__crop--active" type="button">Обрезать</button>
+                </li>
+                <li>
+                  <button class="photo-edit__fill" type="button">Изменить заливку</button>
+                </li>
+                <li>
+                  <button class="photo-edit__contrast" type="button">Изменить контрастность</button>
+                </li>
+              </ul>
+              <div class="photo-edit__range"></div>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__post button button--submit" type="submit">Запостить</button>
+                <button class="photo-edit__cancel button button--reset" type="reset">Отмена</button>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </section>
       <footer class="page-footer">
         <div class=" page-footer__wrapper container">
