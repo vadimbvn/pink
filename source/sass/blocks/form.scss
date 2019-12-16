@@ -1,0 +1,163 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group {
+  padding: 0;
+  border: none;
+
+  &--checkbox {
+    background-color: $grey;
+  }
+
+  &--radio {
+    background-color: $grey;
+  }
+}
+
+.form__group--contacts legend {
+  display: none;
+}
+
+.form__list {
+  @include list-reset;
+}
+
+.form__label {
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.form__input {
+  display: block;
+  line-height: 30px;
+  border: 2px solid $border-grey;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: $base-color;
+}
+
+.form__group legend {
+  font-size: 14px;
+  line-height: 18px;
+  color: $pink;
+}
+
+.form__textarea {
+  width: 275px;
+  height: 200px;
+  line-height: 30px;
+  text-align: center;
+  border: 2px solid $border-grey;
+}
+
+.form__textarea::-webkit-input-placeholder {
+  color: $base-color;
+}
+
+@media (min-width: $tablet-width) {
+  .form__list--name li {
+    display: flex;
+    margin-bottom: 55px;
+  }
+
+  .form__label {
+    margin-right: 22px;
+  }
+
+  .form__input {
+    width: 520px;
+  }
+
+  .form__group {
+    border: 2px solid $border-grey;
+  }
+
+  .form__group--name {
+    order: -3;
+    border: none;
+  }
+
+  .form__group--radio {
+    order: -2;
+  }
+
+  .form__group--contacts {
+    order: -1;
+  }
+
+  .form__group--contacts legend {
+    display: block;
+  }
+
+  .form__list--contacts li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__list--contacts label {
+    padding-left: 217px;
+    order: 1;
+  }
+
+  .form__list--contacts input {
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  .form__textarea {
+    margin-left: 60px;
+    width: 496px;
+    height: 189px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__group {
+    &--checkbox {
+      width: 936px;
+      background-color: $white;
+    }
+
+    &--radio {
+      background-color: $white;
+    }
+  }
+
+  .form__list--name {
+    width: 500px;
+  }
+
+  .form__list--contacts {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form__list--contacts li {
+    margin-bottom: 25px;
+  }
+
+  .form__list--contacts input {
+    width: 371px;
+  }
+
+  .form__group--contacts {
+    width: 936px;
+  }
+
+  .form__textarea {
+    margin-right: 60px;
+    width: 816px;
+  }
+}

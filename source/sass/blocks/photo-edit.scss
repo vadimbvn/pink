@@ -1,5 +1,6 @@
 .photo-edit {
   padding-top: 45px;
+  text-align: center;
 }
 
 .photo-edit__slogan {
@@ -8,6 +9,41 @@
   line-height: 30px;
 }
 
+.photo-edit__background {
+  background-color: $grey;
+}
+
 .photo-edit__list {
   @include list-reset;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-edit__slogan {
+    font-size: 18px;
+  }
+
+  .photo-edit__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photo-edit__list {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-edit__background {
+    margin: 0 auto;
+    width: 940px;
+  }
+
+  .photo-edit__buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+  }
 }
