@@ -1,0 +1,31 @@
+.slider__toggles {
+  margin-top: 42px;
+  text-align: center;
+}
+
+.slider__toggle {
+  box-sizing: content-box;
+  margin-left: 19px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: $base-color;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--active {
+    background-color: $white;
+    border: 3px solid $base-color;
+    opacity: 1;
+  }
+}

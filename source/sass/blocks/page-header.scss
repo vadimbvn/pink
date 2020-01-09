@@ -1,10 +1,20 @@
 .page-header {
-  background-color: $base-color;
+  position: absolute;
+  width: 100%;
+  background-color: rgba($black, 0.3);
   color: white;
+
+  &--opened {
+  margin-bottom: -66px;
+  position: relative;
+  background-color: $base-color;
+  }
 }
 
 .page-header__logo {
-  display: block;
+  display: flex;
+  min-height: 69px;
+  padding-left: 19px;
 }
 
 .page-header__wrapper {
@@ -13,6 +23,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    background-color: rgba($black, 0.3);
+  }
+
   .page-header__wrapper {
     flex-direction: row;
   }

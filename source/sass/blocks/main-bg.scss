@@ -1,20 +1,28 @@
 .main-bg {
-  padding-top: 30px;
-  padding-bottom: 270px;
+  height: 462px;
+  padding-top: 95px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 0;
+  background-position: top center;
   background-repeat: no-repeat;
   background-color: $base-color;
 }
 
 @media (min-width: $tablet-width) {
   .main-bg {
+    height: 729px;
+    padding-top: 184px;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-bg {
+    height: 853px;
+    padding-top: 215px;
     background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
   }
 }

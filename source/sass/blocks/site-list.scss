@@ -1,13 +1,17 @@
-.site-list__item {
+.site__list {
+  box-shadow: 0 -1px 0 0 #000000;
+}
+
+/**.site-list__item {
+/**border-bottom: 1px solid $black;
+  border-top: 1px solid $base-color;**/
+
+.site-list__item a {
   display: block;
   padding-top: 16px;
   padding-bottom: 15px;
-  border-bottom: 1px solid $black;
-  border-top: 1px solid $base-color;
-}
-
-.site-list__item a {
   color: $white;
+  box-shadow: 0 1px $black, inset 0 2px rgba(255, 255, 255, 0.15);
 }
 
 @media (min-width: $desktop-width) {

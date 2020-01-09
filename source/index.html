@@ -7,13 +7,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--opened">
       <div class="page-header__wrapper container">
         <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
         <a class="page-header__logo logo">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__site-list site-list">
               <li class="site-list__item">
@@ -33,10 +33,11 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="download-app main-bg">
-        <div class="container">
+      <section class="download-app">
+        <div class="main-bg">
+            <div class="container download-app__bg">
           <h2 class="visually-hidden">Скачать приложение</h2>
-          <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
+          <p class="download-app__slogan">Взгляните на жизнь<br> иначе!</p>
           <div class="download-app__wrapper">
             <a class="download-app__button button" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
             <ul class="download-app__list">
@@ -52,6 +53,7 @@
             </ul>
             <p class="download-app__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
+        </div>
         </div>
       </section>
       <section class="features-app">
@@ -103,9 +105,9 @@
             </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
@@ -180,9 +182,9 @@
             </tbody>
           </table>
           <p class="tariff__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle slider__toggle--active" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
@@ -211,7 +213,7 @@
             </ul>
           </div>
             <div class="contacts__map">
-              <img src="https://via.placeholder.com/150x150" alt="ул. Большая Конюшенная, 19/8">
+              <iframe src="https://yandex.ru/map-widget/v1/-/CGhaEHyM" title="Наш адрес ул. Большая Конюшенная, 19/8" tabindex="-1"></iframe>
             </div>
         </div>
       </section>

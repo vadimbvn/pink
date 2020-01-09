@@ -37,6 +37,28 @@
   color: $pink;
 }
 
+.contacts__map {
+  position: relative;
+  height: 200px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 33px;
+    width: 100%;
+    background-image: url("..//img/bg-triangle-white-footer.svg");
+    background-size: auto 33px;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  iframe {
+    height: 100%;
+    border: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contacts__list {
     flex-direction: row;
