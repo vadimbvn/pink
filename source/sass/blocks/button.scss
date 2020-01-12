@@ -6,6 +6,7 @@
   height: 55px;
   font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
   color: $white;
   border: 3px solid $white;
   border-radius: 50px;
@@ -23,8 +24,25 @@
   }
 
   &--green {
+    margin-bottom: 44px;
     background-color: $green;
     border-radius: 3px;
     border: 2px solid $green;
+
+    &:hover {
+      background-color: $dark-green;
+      border-color: $dark-green;
+    }
+
+    &:active {
+      background-color: $dark-green;
+      border-color: $dark-green;
+      color: rgba($white, 0.3);
+    }
+
+    &:disabled {
+      background-color: $border-grey;
+      border-color: $border-grey;
+    }
   }
 }

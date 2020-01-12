@@ -1,19 +1,33 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 .form__group {
+  position: relative;
   padding: 0;
+  margin: 0 auto;
+  width: 280px;
   border: none;
 
   &--checkbox {
-    background-color: $grey;
+    margin-top: 82px;
   }
 
   &--radio {
+    margin-top: 82px;
     background-color: $grey;
   }
+
+  &--textarea {
+    margin-top: 41px;
+  }
+}
+
+.form__bg {
+  margin-top: 44px;
+  background-color: $grey;
 }
 
 .form__group--contacts legend {
@@ -25,6 +39,7 @@
 }
 
 .form__label {
+  margin-left: 22px;
   display: block;
   font-size: 14px;
   line-height: 30px;
@@ -33,9 +48,27 @@
 }
 
 .form__input {
+  margin-top: 6px;
+  margin-bottom: 16px;
+  padding-left: 22px;
   display: block;
+  width: 276px;
+  height: 59px;
   line-height: 30px;
   border: 2px solid $border-grey;
+
+  &:hover {
+    border-color: $base-color;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $pink;
+  }
 }
 
 .form__input::-webkit-input-placeholder {
@@ -43,17 +76,101 @@
 }
 
 .form__group legend {
+  margin-left: 28px;
+  width: 220px;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
   color: $pink;
 }
 
+.form__group--checkbox li {
+  margin-bottom: 52px;
+
+  &:last-child {
+    margin-bottom: 50px;
+  }
+}
+
+.form__group--radio li {
+  margin-bottom: 43px;
+
+  &:last-child {
+    margin-bottom: 54px;
+  }
+}
+
+.form__custom-checkbox,
+.form__custom-radio {
+  position: relative;
+  padding-left: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -7px;
+    left: 0;
+    width: 37px;
+    height: 36px;
+    background-color: $white;
+    border: 2px solid $border-grey;
+  }
+
+  &:hover::before {
+    border-color: $base-color;
+  }
+
+  &:active::before {
+    border-color: $pink;
+  }
+}
+
+.form__custom-radio {
+  &::before {
+    border-radius: 50%;
+  }
+}
+
+.form__checkbox:checked + .form__custom-checkbox::before {
+  background-image: url("../img/icon-yes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.form__radio:checked + .form__custom-radio::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  background-color: $pink;
+  border-radius: 50%;
+}
+
 .form__textarea {
-  width: 275px;
-  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 52px;
+  padding-top: 15px;
+  padding-left: 17px;
+  width: 100%;
+  min-height: 200px;
   line-height: 30px;
-  text-align: center;
+  text-align: left;
   border: 2px solid $border-grey;
+  outline: none;
+
+  &:hover {
+    border-color: $base-color;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
 }
 
 .form__textarea::-webkit-input-placeholder {
