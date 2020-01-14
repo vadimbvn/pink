@@ -1,6 +1,12 @@
 
 .tariff {
-  padding-top: 145px;
+  position: relative;
+  padding-top: 89px;
+  padding-bottom: 45px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
   background-color: $grey;
 }
 
@@ -31,6 +37,33 @@
   &--hide {
     display: none;
   }
+
+  &--hit {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 74px;
+      height: 73px;
+      top: 0;
+      left: 0;
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &::after {
+      content: "Хит";
+      position: absolute;
+      width: 74px;
+      top: 12px;
+      left: -15px;
+      font-size: 15px;
+      font-weight: 300;
+      transform: rotate(315deg);
+    }
+  }
 }
 
 .tariff__price {
@@ -60,6 +93,11 @@
 }
 
 .tariff__set {
+  position: relative;
+  padding-left: 22px;
+  padding-top: 13px;
+  padding-right: 22px;
+  padding-bottom: 14px;
   font-size: 14px;
   line-height: 30px;
   text-align: left;
@@ -68,7 +106,13 @@
   border-left: 2px solid $border-grey;
 }
 
+
 @media (min-width: $tablet-width) {
+  .tariff {
+    padding-bottom: 25px;
+  }
+
+
   .tariff__list {
     width: 620px;
     margin-left: 0;
@@ -111,6 +155,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .tariff {
+    padding-top: 149px;
+    padding-bottom: 55px;
+  }
+
+
   .tariff__list {
     width: 940px;
   }

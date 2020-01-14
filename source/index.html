@@ -10,13 +10,15 @@
     <header class="page-header page-header--opened">
       <div class="page-header__wrapper container">
         <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
-        <a class="page-header__logo logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+        <div class="page-header__logo__wrapper">
+        <a class="logo">
+          <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
         </a>
+      </div>
         <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__site-list site-list">
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a>Главная</a>
               </li>
               <li class="site-list__item">
@@ -117,25 +119,25 @@
           <table class="tariff__list">
             <tr>
               <th class="tariff__type tariff__type--hide"></th>
-              <th class="tariff__type tariff__type--base">
+              <th class="tariff__type">
                 <p>База</p>
               </th>
-              <td class="tariff__type tariff__type--standard">
+              <td class="tariff__type tariff__type--hit">
                 <p>Стандарт</p>
               </td>
-              <td class="tariff__type tariff__type--unlim">
+              <td class="tariff__type">
                 <p>Анлим</p>
               </td>
             </tr>
             <tr>
               <td class="tariff__price tariff__price--hide"></td>
-              <td class="tariff__price tariff__price--base">
+              <td class="tariff__price">
                 <p>1,99 Usd</p>
               </td>
-              <td class="tariff__price tariff__price--standard">
+              <td class="tariff__price">
                 <p>3,99 Usd</p>
               </td>
-              <td class="tariff__price tariff__price--unlim">
+              <td class="tariff__price">
                 <p>9,99 Usd</p>
               </td>
             </tr>
@@ -214,6 +216,9 @@
           </div>
             <div class="contacts__map">
               <iframe src="https://yandex.ru/map-widget/v1/-/CGhaEHyM" title="Наш адрес ул. Большая Конюшенная, 19/8" tabindex="-1"></iframe>
+              <div class="contact__map">
+                <div class="contact__marker"></div>
+              </div>
             </div>
         </div>
       </section>
