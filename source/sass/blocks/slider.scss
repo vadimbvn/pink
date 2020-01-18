@@ -1,11 +1,11 @@
 .slider__toggles {
-  margin-top: 42px;
+  margin-top: 20px;
   text-align: center;
 }
 
 .slider__toggle {
   box-sizing: content-box;
-  margin-left: 19px;
+  margin-right: 13px;
   padding: 0;
   width: 6px;
   height: 6px;
@@ -29,3 +29,56 @@
     opacity: 1;
   }
 }
+
+.slider__button {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    position: relative;
+  }
+
+  .slider__button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &--previous {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      top: 28px;
+      left: 0;
+      width: 22px;
+      height: 41px;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      opacity: 0.3;
+    }
+
+    &--next {
+      position: absolute;
+      top: 28px;
+      right: 0;
+      width: 22px;
+      height: 41px;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      opacity: 0.3;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}
+

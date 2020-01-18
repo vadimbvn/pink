@@ -65,17 +65,17 @@
           <p class="features-app__slogan features-app__slogan--second">Нам есть, что вам<br>предложить!</p>
         </div>
         <div class="features-app__background">
-          <div class="features-app__wrapper container">
+          <div class="container">
             <ul class="features-app__list">
-              <li class="features-app__item">
+              <li class="features-app__item features-app__item--mood">
                 <h3 class="features-app__title">Поднимает настроение</h3>
                 <p class="features-app__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
-              <li class="features-app__item">
+              <li class="features-app__item features-app__item--world">
                 <h3 class="features-app__title">Меняет мир вокруг</h3>
                 <p class="features-app__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
-              <li class="features-app__item">
+              <li class="features-app__item features-app__item--friend">
                 <h3 class="features-app__title">Заводит новых друзей</h3>
                 <p class="features-app__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
@@ -86,17 +86,23 @@
       <section class="explore">
         <h2 class="visually-hidden">Исследования</h2>
         <div class="explore__wrapper container">
-          <img class="explore__img" src="https://via.placeholder.com/150x150" alt="Таймер на 24 часа">
+          <div class="explore__timer">
+            <img src="img/icon-timer.svg" width="298" height="345">
+            <div class="explore__content">
+              <p>24</p>
+            </div>
+          </div>
           <div class="explore__section">
             <p class="explore__title">Эффект на 24 часа!</p>
             <p class="explore__info">Британские ученые провели исследования и доказали,
-            что положительный эффект от использования приложения длится целые сутки!</p>
+            что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
             <a class="explore__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider container">
+        <div class="container">
+          <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
@@ -111,7 +117,10 @@
             <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
+          <button class="slider__button slider__button--previous"><span class="visually-hidden">Назад</span></button>
+            <button class="slider__button slider__button--next"><span class="visually-hidden">Следующий</span></button>
         </div>
+      </div>
       </section>
       <section class="tariff">
         <h2 class="visually-hidden">Тарифы</h2>
@@ -143,42 +152,48 @@
             </tr>
             <tbody class="tariff__content">
               <tr>
-                <td class="tariff__set tariff__set--hide"></th>
-                <td class="tariff__set">Розовый фильтр</th>
-                <td class="tariff__pink-filter">
-                  <span class="">Да</span>
+                <td class="tariff__set tariff__set--hide">Розовый фильтр</td>
+                <td class="tariff__set">
+                  <span class="tariff__name">Розовый фильтр</span>
+                  <span class="tariff__available tariff__available--yes">Да</span>
                 </td>
-                <td class="tariff__pink-filter">
-                  <span class="">Да</span>
+                <td class="tariff__set">
+                  <span class="tariff__name">Розовый фильтр</span>
+                  <span class="tariff__available tariff__available--yes">Да</span>
                 </td>
-                <td class="tariff__pink-filter">
-                  <span class="">Да</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="tariff__set tariff__set--hide"></th>
-                <td class="tariff__set">Смайлики</th>
-                <td class="tariff__smile">
-                  <span class="">Нет</span>
-                </td>
-                <td class="tariff__smile">
-                  <span class="">Да</span>
-                </td>
-                <td class="tariff__smile">
-                  <span class="">Да</span>
+                <td class="tariff__set">
+                  <span class="tariff__name">Розовый фильтр</span>
+                  <span class="tariff__available tariff__available--yes">Да</span>
                 </td>
               </tr>
               <tr>
-                <td class="tariff__set tariff__set--hide"></th>
-                <td class="tariff__set">Комментарии</th>
-                <td class="tariff__comment">
-                  <span class="">Нет</span>
+                <td class="tariff__set tariff__set--hide">Смайлики</td>
+                <td class="tariff__set">
+                  <span class="tariff__name">Смайлики</span>
+                  <span class="tariff__available tariff__available--no">Нет</span>
                 </td>
-                <td class="tariff__comment">
-                  <span class="">Нет</span>
+                <td class="tariff__set">
+                  <span class="tariff__name">Смайлики</span>
+                  <span class="tariff__available tariff__available--yes">Да</span>
                 </td>
-                <td class="tariff__comment">
-                  <span class="">Да</span>
+                <td class="tariff__set">
+                  <span class="tariff__name">Смайлики</span>
+                  <span class="tariff__available tariff__available--yes">Да</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="tariff__set tariff__set--hide">Комментарии</td>
+                <td class="tariff__set">
+                  <span class="tariff__name">Комментарии</span>
+                  <span class="tariff__available tariff__available--no">Нет</span>
+                </td>
+                <td class="tariff__set">
+                  <span class="tariff__name">Комментарии</span>
+                  <span class="tariff__available tariff__available--no">Нет</span>
+                </td>
+                <td class="tariff__set">
+                  <span class="tariff__name">Комментарии</span>
+                  <span class="tariff__available tariff__available--yes">Да</span>
                 </td>
               </tr>
             </tbody>
@@ -194,7 +209,6 @@
         <div class="container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__title">Остались вопросы?Свяжитесь с нами!</p>
-          <div class="contacts__wrapper">
             <ul class="contacts__list">
               <li class="contacts__item">
                 <p class="contacts__text">Звоните:</p>
@@ -205,44 +219,45 @@
               <li class="contacts__item">
                 <p class="contacts__text">Пишите:</p>
                 <p class="contacts__info">
-                  <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                  <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>
               </li>
               <li class="contacts__item">
                 <p class="contacts__text">Приезжайте в гости:</p>
-                <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+                <p class="contacts__info">ул. Большая<br> Конюшенная, 19/8</p>
               </li>
             </ul>
           </div>
             <div class="contacts__map">
-              <iframe src="https://yandex.ru/map-widget/v1/-/CGhaEHyM" title="Наш адрес ул. Большая Конюшенная, 19/8" tabindex="-1"></iframe>
-              <div class="contact__map">
+               <iframe src="https://yandex.ru/map-widget/v1/-/CGhaEHyM" title="Наш адрес ул. Большая Конюшенная, 19/8" tabindex="-1"></iframe>
+               <div class="contact__map">
                 <div class="contact__marker"></div>
               </div>
             </div>
-        </div>
       </section>
       <footer class="page-footer page-footer--index">
         <div class=" page-footer__wrapper container">
-          <a class="page-footer__logo logo">
-            <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+          <a class="logo__footer logo">
+            <img class="logo__footer-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
           </a>
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+                <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a>
+                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы на Фейсбуке</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+                <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a>
               </li>
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
             <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="24">
+              <span class="visually-hidden">HTML Academy</span></a>
           </div>
         </div>
       </footer>
