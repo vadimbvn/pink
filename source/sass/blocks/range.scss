@@ -1,0 +1,78 @@
+.range {
+  position: relative;
+  left: 40px;
+  padding-top: 3px;
+  height: 10px;
+}
+
+.range__bar {
+  width: 240px;
+  height: 2px;
+  background-color: $black;
+}
+
+.range__toggle {
+  position: absolute;
+  top: -3px;
+  left: 60%;
+  width: 14px;
+  height: 15px;
+  background-color: $grey;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    background-color: $pink;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .range {
+    margin-top: 3px;
+    top: 4px;
+    left: -22px;
+  }
+
+  .range__bar {
+    width: 202px;
+  }
+
+  .range__toggle {
+    left: 55%;
+
+    &--fill {
+      left: 13%;
+    }
+
+    &--contrast {
+      left: 40%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range {
+    margin-top: 10px;
+    top: 7px;
+    left: 0;
+  }
+
+  .range__bar {
+    width: 288px;
+  }
+
+  .range__toggle {
+    &--crop {
+      left: 15%;
+    }
+
+    &--fill {
+      left: 60%;
+    }
+
+    &--contrast {
+      left: 35%;
+    }
+  }
+}
