@@ -11,7 +11,7 @@
   border: 3px solid $white;
   border-radius: 50px;
 
-   &--submit {
+  &--submit {
     margin-bottom: 12px;
     color: $pink;
     border-color: $pink;
@@ -76,6 +76,10 @@
 
     &--reset {
       width: 260px;
+    }
+
+    &--green {
+      width: 300px;
     }
   }
 }

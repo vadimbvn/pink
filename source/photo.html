@@ -7,20 +7,22 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--opened">
       <div class="page-header__wrapper container">
         <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
-        <a class="page-header__logo logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+        <div class="page-header__logo__wrapper">
+        <a class="logo">
+          <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
         </a>
-        <nav class="main-nav">
+      </div>
+        <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__site-list site-list">
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
-                <a>Фотографии</a>
+                <a href="#">Фотографии</a>
               </li>
               <li class="site-list__item">
                 <a href="form.html">Конкурс</a>
@@ -34,8 +36,10 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Галерея фотографий</h1>
-      <div class="main-bg">
-        <h2 class="page-main__title">Фотографии пользователей</h2>
+      <div class="main-bg main-bg--photo">
+        <div class="container">
+          <h2 class="page-main__title page-main__title--photo">Фотографии пользователей</h2>
+        </div>
       </div>
       <section class="user-photo">
         <div class="container">
@@ -158,7 +162,7 @@
           </div>
         </div>
       </section>
-      <footer class="page-footer page-footer--index">
+      <footer class="page-footer">
         <div class=" page-footer__wrapper container">
           <a class="logo__footer logo">
             <img class="logo__footer-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
