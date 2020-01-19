@@ -7,23 +7,25 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--opened">
       <div class="page-header__wrapper container">
         <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
-        <a class="page-header__logo logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+        <div class="page-header__logo__wrapper">
+        <a class="logo">
+          <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
         </a>
-        <nav class="main-nav">
+      </div>
+        <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__site-list site-list">
-              <li class="site-list__item">
-                <a href="index.html">Главная</a>
+              <li class="site-list__item site-list__item--active">
+                <a href="#">Главная</a>
               </li>
               <li class="site-list__item">
                 <a href="photo.html">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a>Конкурс</a>
+                <a href="#">Конкурс</a>
               </li>
               <li class="site-list__item">
                 <a href="#">Html Academy</a>
@@ -34,15 +36,15 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Форма для участия в конкурсе</h1>
-      <div class="main-bg">
+      <div class="main-bg main-bg--form">
         <div class="container">
-        <h2 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      </div>
+        <h2 class="page-main__title page-main__title--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
       </div>
       <section class="contest">
+        <h2 class="visually-hidden">Форма для регистрации</h2>
         <div class="container">
-          <p class="contest__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          Пожалуйста, заполните форму ниже:</p>
+          <p class="contest__slogan">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="contest__info">Пожалуйста, заполните форму ниже:</span></p>
           </div>
           <form class="contest__form form">
             <fieldset class="form__group form__group--name">
@@ -61,7 +63,6 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="form__bg">
             <fieldset class="form__group form__group--checkbox">
               <legend>Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list form__list--checkbox">
@@ -91,21 +92,23 @@
                 </li>
               </ul>
             </fieldset>
-          </div>
             <fieldset class="form__group form__group--contacts">
               <legend>Контактная Информация</legend>
               <ul class="form__list form__list--contacts">
                 <li>
                   <label class="form__label" for="user-phone">Номер телефона</label>
-                  <input class="form__input" type="tel" name="userphone" id="user-phone" placeholder="Номер, пожалуйста">
+                  <div class="form__wrapper form__wrapper--phone">
+                    <input class="form__input" type="tel" name="userphone" id="user-phone" placeholder="Номер, пожалуйста">
+                  </div>
                 </li>
                 <li>
                   <label class="form__label" for="user-email">Адрес почты</label>
-                  <input class="form__input" type="email" name="useremail" id="user-email" placeholder="Введите почту *">
+                  <div class="form__wrapper form__wrapper--mail">
+                    <input class="form__input" type="email" name="useremail" id="user-email" placeholder="Введите почту *">
+                  </div>
                 </li>
               </ul>
             </fieldset>
-            <div class="form__bg">
             <fieldset class="form__group form__group--radio">
               <legend>С каким приложением путешествовали?</legend>
               <ul class="form__list form__list--radio">
@@ -123,7 +126,6 @@
                 </li>
               </ul>
             </fieldset>
-          </div>
             <fieldset class="form__group form__group--textarea">
               <legend>Опишите свои эмоции</legend>
               <textarea class="form__textarea" name="userreview" id="user-review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -131,32 +133,34 @@
             <div class="contest__wrapper">
               <button class="contest__button button button--green" type="submit">Отправить форму</button>
               <p class="contest__text">
-                <span>*</span> - обязательные поля
+                <span class="contest__asterisk">*</span> - обязательные <span class="contest__hide-text">для заполнения</span> поля
               </p>
             </div>
           </form>
       </section>
       <footer class="page-footer">
         <div class=" page-footer__wrapper container">
-          <a class="page-footer__logo logo">
-            <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+          <a class="logo__footer logo">
+            <img class="logo__footer-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
           </a>
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+                <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#">Мы в Контакте</a>
+                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы на Фейсбуке</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="#">Мы на Ютубе</a>
+                <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a>
               </li>
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
             <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="24">
+              <span class="visually-hidden">HTML Academy</span></a>
           </div>
         </div>
       </footer>
