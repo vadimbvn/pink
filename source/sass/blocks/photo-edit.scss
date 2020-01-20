@@ -5,6 +5,7 @@
 
 .photo-edit__slogan {
   margin: 0;
+  margin-bottom: 42px;
   font-size: 14px;
   line-height: 30px;
 }
@@ -13,37 +14,122 @@
   background-color: $grey;
 }
 
+.photo-edit__form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 41px;
+}
+
+.photo-edit__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+.photo-edit__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .photo-edit__list {
   @include list-reset;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+}
+
+.photo-edit__range {
+  margin-top: 32px;
+
+  &--fill {
+    display: none;
+  }
+
+  &--contrast {
+    display: none;
+  }
+}
+
+.photo-edit__button {
+  padding: 0;
+  width: 44px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.photo-edit__upload-buttons {
+  margin: 0 auto;
+  margin-top: auto;
 }
 
 @media (min-width: $tablet-width) {
   .photo-edit__slogan {
+    margin-bottom: 69px;
     font-size: 18px;
   }
 
-  .photo-edit__wrapper {
-    display: flex;
+  .photo-edit__form {
+    flex-direction: row;
     justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 54px;
   }
 
-  .photo-edit__list {
-    flex-direction: column;
+  .photo-edit__image {
+    margin: 0;
+  }
+
+  .photo-edit__wrapper {
+    padding-top: 9px;
+    padding-left: 48px;
+  }
+
+  .photo-edit__button {
+    width: 22px;
+  }
+
+  .photo-edit__range {
+    margin-top: 0;
+
+    &--fill {
+      display: block;
+    }
+
+    &--contrast {
+      display: block;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .photo-edit {
+    margin-bottom: 32px;
+  }
+
+  .photo-edit__slogan {
+    margin-bottom: 65px;
+  }
+
+
   .photo-edit__background {
     margin: 0 auto;
     width: 940px;
   }
 
-  .photo-edit__buttons {
+  .photo-edit__form {
+    padding-top: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 57px;
+  }
+
+  .photo-edit__wrapper {
+    padding: 0;
+    width: 410px;
+  }
+
+  .photo-edit__upload-buttons {
     display: flex;
-    justify-content: space-around;
-    width: 700px;
+    justify-content: space-between;
+    width: 410px;
   }
 }

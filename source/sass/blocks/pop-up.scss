@@ -1,0 +1,135 @@
+.pop-up {
+  position: fixed;
+  width: 100%;
+  top: 25%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 25px 15px -25px rgba(0, 0, 0, 0.2);
+}
+
+.pop-up--close {
+  display: none;
+}
+
+.pop-up *:first-child {
+  margin-top: 0;
+}
+
+.pop-up__title {
+  margin-bottom: 25px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.pop-up__content {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.pop-up__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.pop-up--correctly {
+  padding-bottom: 0;
+}
+
+.pop-up .pop-up__content:last-of-type {
+  margin-bottom: 38px;
+}
+
+.pop-up--correctly .pop-up__bg {
+  padding-top: 48px;
+  padding-bottom: 52px;
+  background-color: $grey;
+}
+
+.pop-up__button {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .pop-up {
+    margin-left: -230px;
+    padding-top: 36px;
+    left: 50%;
+    width: 460px;
+  }
+
+  .pop-up__title {
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .pop-up__content {
+    font-size: 18px;
+  }
+
+  .pop-up__wrapper {
+    width: auto;
+  }
+
+  .pop-up--error {
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 52px;
+  }
+
+  .pop-up--correctly {
+    padding-bottom: 0;
+  }
+
+  .pop-up--correctly .pop-up__content,
+  .pop-up--correctly .pop-up__title,
+  .pop-up--correctly .pop-up__button {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .pop-up--correctly .pop-up__content:last-of-type {
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pop-up__wrapper {
+    width: auto;
+  }
+
+  .pop-up {
+    width: 780px;
+    margin-left: -390px;
+    padding-top: 40px;
+  }
+
+  .pop-up--error {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .pop-up--error .pop-up__bg {
+    padding-top: 48px;
+    padding-bottom: 52px;
+    background-color: $grey;
+  }
+
+  .pop-up__title,
+  .pop-up__content {
+    margin-left: 190px;
+    margin-right: 190px;
+  }
+
+  .pop-up--correctly .pop-up__content:last-of-type {
+    margin-bottom: 38px;
+  }
+
+  .pop-up--correctly .pop-up__button {
+    width: 456px;
+    margin: 0 auto;
+  }
+}

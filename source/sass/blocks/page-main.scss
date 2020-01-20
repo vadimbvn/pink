@@ -1,6 +1,21 @@
 .page-main__title {
+  margin: 0 auto;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 50px;
+
+    &--photo {
+      width: 350px;
+    }
+
+    &--form {
+      width: 500px;
+    }
+  }
 }
