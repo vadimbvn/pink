@@ -4,8 +4,9 @@
 }
 
 .user-photo__text {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 55px;
+  width: 250px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -30,7 +31,7 @@
     &::after {
       content: "Панорама дня";
       position: absolute;
-      padding-top: 3px;
+      padding-top: 5px;
       top: 0;
       right: 20px;
       width: 140px;
@@ -48,7 +49,16 @@
 
 .user-photo__img {
   display: block;
+  width: 280px;
+  height: 180px;
+  background-color: $grey;
+
+  &--panorama {
+    width: 320px;
+    height: 137px;
+  }
 }
+
 
 .user-photo__author {
   margin: 0;
@@ -107,7 +117,18 @@
 
   .user-photo__text {
     margin-bottom: 80px;
+    width: 550px;
     font-size: 18px;
+  }
+
+  .user-photo__img {
+    width: 300px;
+    height: 300px;
+
+    &--panorama {
+      min-width: 700px;
+      height: 509px;
+    }
   }
 
   .user-photo__list {
@@ -124,6 +145,7 @@
 
       &::after {
         top: 57px;
+        right: 1px;
       }
     }
   }
@@ -173,7 +195,16 @@
     width: 940px;
 
     &::after {
-      top: 54px;
+      top: 35px;
+    }
+  }
+
+  .user-photo__img {
+    height: 400px;
+
+    &--panorama {
+      min-width: 1200px;
+      height: 400px;
     }
   }
 

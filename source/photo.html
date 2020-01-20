@@ -11,17 +11,17 @@
       <div class="page-header__wrapper container">
         <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
         <div class="page-header__logo__wrapper">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
         </a>
       </div>
         <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__site-list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item site-list__item">
                 <a href="index.html">Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a href="#">Фотографии</a>
               </li>
               <li class="site-list__item">
@@ -48,7 +48,11 @@
           <ul class="user-photo__list">
             <li class="user-photo__item user-photo__item--panorama">
               <a href="#">
-                <img class="user-photo__img" src="img/panorama-mobile@1x.jpg" alt="Фотография пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="user-photo__img user-photo__img--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 2x" alt="Фотография пользователя">
+                </picture>
               </a>
               <div class="user-photo__wrapper user-photo__wrapper--panorama">
                 <p class="user-photo__author">Анна<span class="user-photo__time">(5 минут назад)</span></p>
@@ -58,7 +62,11 @@
             </li>
             <li class="user-photo__item">
               <a href="#">
-                <img class="user-photo__img" src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="user-photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                  </picture>
               </a>
                 <div class="user-photo__wrapper">
                 <p class="user-photo__author">Левон<span class="user-photo__time">(5 часов назад)</span></p>
@@ -68,7 +76,11 @@
             </li>
             <li class="user-photo__item">
               <a href="#">
-                <img class="user-photo__img" src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="user-photo__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                </picture>
               </a>
                 <div class="user-photo__wrapper">
                 <p class="user-photo__author">Антон<span class="user-photo__time">(12 часов назад)</span></p>
@@ -78,7 +90,11 @@
             </li>
             <li class="user-photo__item">
               <a href="#">
-                <img class="user-photo__img" src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="user-photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                </picture>
               </a>
               <div class="user-photo__wrapper">
                 <p class="user-photo__author">Борис<span class="user-photo__time">(20 часов назад)</span></p>
@@ -88,7 +104,11 @@
             </li>
             <li class="user-photo__item">
               <a href="#">
-                <img class="user-photo__img" src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="user-photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                </picture>
               </a>
               <div class="user-photo__wrapper">
                 <p class="user-photo__author">Сергей<span class="user-photo__time">(25 часов назад)</span></p>
@@ -98,7 +118,11 @@
             </li>
             <li class="user-photo__item">
               <a href="#">
-                <img class="user-photo__img" src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="user-photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                </picture>
               </a>
               <div class="user-photo__wrapper">
                 <p class="user-photo__author">Максим<span class="user-photo__time">(40 часов назад)</span></p>
@@ -108,7 +132,11 @@
             </li>
             <li class="user-photo__item">
               <a href="#">
-                <img class="user-photo__img" src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="user-photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                </picture>
               </a>
               <div class="user-photo__wrapper">
                 <p class="user-photo__author">Надежда<span class="user-photo__time">(45 часов назад)</span></p>
@@ -128,7 +156,11 @@
           <div class="photo-edit__background">
             <div class="container">
             <form class="photo-edit__form" action="https://echo.htmlacademy.ru" method="post">
-              <img class="photo-edit__image" src="img/photo-road-mobile@1x.jpg" alt="Фотография для редактирования">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="photo-edit__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фотография для редактирования">
+              </picture>
               <div class="photo-edit__wrapper">
               <ul class="photo-edit__list">
                 <li>
@@ -162,32 +194,33 @@
           </div>
         </div>
       </section>
-      <footer class="page-footer">
-        <div class=" page-footer__wrapper container">
-          <a class="logo__footer logo">
-            <img class="logo__footer-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
-          </a>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы на Фейсбуке</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="24">
-              <span class="visually-hidden">HTML Academy</span></a>
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer class="page-footer">
+      <div class=" page-footer__wrapper container">
+        <a class="logo__footer logo" href="index.html">
+          <img class="logo__footer-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы на Фейсбуке</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="24">
+            <span class="visually-hidden">HTML Academy</span></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
