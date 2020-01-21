@@ -11,20 +11,20 @@
       <div class="page-header__wrapper container">
         <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
         <div class="page-header__logo__wrapper">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
         </a>
       </div>
         <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__site-list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item site-list__item">
                 <a href="#">Главная</a>
               </li>
               <li class="site-list__item">
                 <a href="photo.html">Фотографии</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a href="#">Конкурс</a>
               </li>
               <li class="site-list__item">
@@ -113,15 +113,15 @@
               <legend>С каким приложением путешествовали?</legend>
               <ul class="form__list form__list--radio">
                 <li>
-                  <input class="form__radio visually-hidden" type="radio" name="pinkios" id="pink-ios" checked>
+                  <input class="form__radio visually-hidden" type="radio" name="platform" id="pink-ios" checked>
                   <label class="form__custom-radio" for="pink-ios">Pink для iOS</label>
                 </li>
                 <li>
-                  <input class="form__radio visually-hidden" type="radio" name="pinkandroid" id="pink-android">
+                  <input class="form__radio visually-hidden" type="radio" name="platform" id="pink-android">
                   <label class="form__custom-radio" for="pink-android">Pink на Android</label>
                 </li>
                 <li>
-                  <input class="form__radio visually-hidden" type="radio" name="pinkwindows" id="pink-windows">
+                  <input class="form__radio visually-hidden" type="radio" name="platform" id="pink-windows">
                   <label class="form__custom-radio" for="pink-windows">Windows Phone</label>
                 </li>
               </ul>
@@ -138,50 +138,50 @@
             </div>
           </form>
       </section>
-      <footer class="page-footer">
-        <div class=" page-footer__wrapper container">
-          <a class="logo__footer logo">
-            <img class="logo__footer-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
-          </a>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы на Фейсбуке</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="24">
-              <span class="visually-hidden">HTML Academy</span></a>
-          </div>
+    </main>
+    <footer class="page-footer">
+      <div class=" page-footer__wrapper container">
+        <a class="logo__footer logo" href="index.html">
+          <img class="logo__footer-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы на Фейсбуке</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a>
+            </li>
+          </ul>
         </div>
-      </footer>
-      <div class="pop-up pop-up--error pop-up--close">
-        <div class="pop-up__wrapper">
-          <p class="pop-up__title">Что-то пошло не так!</p>
-          <p class="pop-up__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="24">
+            <span class="visually-hidden">HTML Academy</span></a>
         </div>
-          <div class="pop-up__bg">
+      </div>
+    </footer>
+    <div class="pop-up pop-up--error pop-up--close">
+      <div class="pop-up__wrapper">
+        <p class="pop-up__title">Что-то пошло не так!</p>
+        <p class="pop-up__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+        <div class="pop-up__bg">
           <button class="pop-up__button button button--green" type="button">Ок</button>
         </div>
+    </div>
+    <div class="pop-up pop-up--correctly pop-up--close">
+      <div class="pop-up__wrapper">
+        <p class="pop-up__title">Ваша заявка отправлена</p>
+        <p class="pop-up__content">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       </div>
-      <div class="pop-up pop-up--correctly pop-up--close">
-        <div class="pop-up__wrapper">
-          <p class="pop-up__title">Ваша заявка отправлена</p>
-          <p class="pop-up__content">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        </div>
-          <div class="pop-up__bg">
-            <button class="pop-up__button button button--green" type="button">Закрыть окно</button>
-        </div>
+      <div class="pop-up__bg">
+          <button class="pop-up__button button button--green" type="button">Закрыть окно</button>
       </div>
-    </main>
+    </div>
   </body>
 </html>

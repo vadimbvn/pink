@@ -55,10 +55,12 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+  text-align: center;
 }
 
 .download-app__link {
   display: block;
+  margin-top: auto;
 
   &--app-store {
     margin-top: 32px;
@@ -78,7 +80,7 @@
     background-position: 0 0;
   }
 
-  &--microsofr-store {
+  &--microsoft-store {
     margin-top: 44px;
     width: 44px;
     height: 41px;
@@ -108,11 +110,30 @@
 
   .download-app__wrapper {
     margin: 0;
-    width: 300px;
+    width: 350px;
   }
 
   .download-app {
     padding: 0;
+  }
+
+  .download-app__link {
+    &--app-store {
+      margin-top: 46px;
+    }
+
+    &--google-play {
+      margin-top: 56px;
+    }
+
+    &--microsoft-store {
+      margin-top: 62px;
+    }
+  }
+
+  .download-app__info {
+    margin-top: 40px;
+    font-size: 18px;
   }
 }
 
@@ -132,5 +153,27 @@
     background-size: 1050px 645px;
     background-repeat: no-repeat;
     background-position: 27px;
+  }
+
+  .download-app__wrapper {
+    width: 300px;
+  }
+
+  .download-app__link {
+    &--app-store {
+      margin-top: 67px;
+    }
+
+    &--google-play {
+      margin-top: 80px;
+    }
+
+    &--microsoft-store {
+      margin-top: 79px;
+    }
+  }
+
+  .download-app__info {
+    margin-top: 60px;
   }
 }

@@ -6,12 +6,17 @@
   background-repeat: no-repeat;
   background-color: $base-color;
 
-  &--photo,
-  &--form {
-    padding-top: 95px;
-    height: 243px;
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
+
+.main-bg--photo,
+.main-bg--form {
+  padding-top: 95px;
+  height: 243px;
+}
+
 
 @media (min-width: $tablet-width) {
   .main-bg {
@@ -21,11 +26,15 @@
     background-size: 1200px 729px;
     background-repeat: no-repeat;
 
-    &--photo,
-    &--form {
-      height: 438px;
-      padding-top: 181px;
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
+  }
+
+  .main-bg--photo,
+  .main-bg--form {
+    height: 438px;
+    padding-top: 181px;
   }
 }
 
@@ -37,10 +46,14 @@
     background-size: 2560px 853px;
     background-repeat: no-repeat;
 
-    &--photo,
-    &--form {
-      padding-top: 175px;
-      height: 393px;
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
+  }
+
+  .main-bg--photo,
+  .main-bg--form {
+    padding-top: 175px;
+    height: 393px;
   }
 }

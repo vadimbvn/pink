@@ -69,6 +69,8 @@
 
 @media (min-width: $tablet-width) {
   .button {
+    width: 300px;
+
     &--submit {
       width: 260px;
       margin-bottom: 24px;
