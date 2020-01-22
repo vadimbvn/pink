@@ -24,7 +24,6 @@
 .photo-edit__image {
   display: block;
   margin: 0 auto;
-  margin-bottom: 42px;
   width: 280px;
   height: 374px;
 }
@@ -38,29 +37,13 @@
   @include list-reset;
 }
 
-.photo-edit__range {
-  margin-top: 32px;
-
-  &--fill {
-    display: none;
-  }
-
-  &--contrast {
-    display: none;
-  }
-}
-
-.photo-edit__button {
-  padding: 0;
-  width: 44px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
 
 .photo-edit__upload-buttons {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  margin-top: auto;
+  padding-top: 47px;
+  padding-bottom: 41px;
 }
 
 @media (min-width: $tablet-width) {
@@ -87,22 +70,13 @@
     padding-left: 48px;
   }
 
-  .photo-edit__button {
-    width: 22px;
-  }
-
-  .photo-edit__range {
-    margin-top: 0;
-
-    &--fill {
-      display: block;
-    }
-
-    &--contrast {
-      display: block;
-    }
+  .photo-edit__upload-buttons {
+    margin-left: 31px;
+    padding-top: 67px;
+    padding-bottom: 54px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .photo-edit {
@@ -132,8 +106,11 @@
   }
 
   .photo-edit__upload-buttons {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin-left: 22px;
+    padding-top: 144px;
+    padding-bottom: 57px;
     width: 410px;
   }
 }

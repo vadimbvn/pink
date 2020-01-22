@@ -7,15 +7,23 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header page-header--opened">
+    <header class="page-header page-header--cloded">
       <div class="page-header__wrapper container">
         <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
-        <div class="page-header__logo__wrapper">
-        <a class="logo" href="index.html">
-          <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+        <div class="page-header__logo__wrapper logo">
+        <a class="logo__header" href="index.html">
+          <svg class="logo__image logo__image--mobile" width="75" height="23" viewBox="0 0 74.426 22.859">
+            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="logo__image logo__image--tablet" width="147" height="41" viewBox="0 0 146.3 40.375">
+            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="logo__image logo__image--desktop" width="147" height="41" viewBox="0 0 146.3 40.375">
+            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
         </a>
       </div>
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--open">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__site-list site-list">
               <li class="site-list__item site-list__item">
@@ -28,7 +36,7 @@
                 <a href="#">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a href="#">Html Academy</a>
+                <a href="#">HTML Academy</a>
               </li>
             </ul>
         </nav>
@@ -71,7 +79,7 @@
                   <label class="form__custom-checkbox" for="selfie">Сделал селфи с акулой</label>
                 </li>
                 <li>
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="beach" id="beach">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
                   <label class="form__custom-checkbox" for="beach">Обгорел на пляже</label>
                 </li>
                 <li>
@@ -83,7 +91,7 @@
                   <label class="form__custom-checkbox" for="gift">Накупил сувениров</label>
                 </li>
                 <li>
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="tower" id="tower">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
                   <label class="form__custom-checkbox" for="tower">Удержал башню</label>
                 </li>
                 <li>
@@ -142,7 +150,12 @@
     <footer class="page-footer">
       <div class=" page-footer__wrapper container">
         <a class="logo__footer logo" href="index.html">
-          <img class="logo__footer-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк">
+          <svg class="logo__image-footer logo__image-footer--mobile" width="147" height="41" viewBox="0 0 146.3 40.375">
+            <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+          </svg>
+          <svg class="logo__image-footer logo__image-footer--desktop" width="147" height="41" viewBox="0 0 146.3 40.375">
+            <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+          </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -160,7 +173,9 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="24">
+            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34">
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
             <span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>

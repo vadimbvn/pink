@@ -7,8 +7,17 @@
 
 .copyright__logo {
   position: absolute;
-  top: 12px;
+  top: 8px;
   right: 10px;
+  fill: $pink;
+
+  &:hover {
+    fill: $base-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {

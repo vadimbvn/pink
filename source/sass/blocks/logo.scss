@@ -1,6 +1,19 @@
-.logo {
+.logo__header {
   display: block;
   cursor: pointer;
+}
+
+.logo__image {
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
 }
 
 .logo__footer {
@@ -8,8 +21,61 @@
   margin-bottom: 41px;
 }
 
+.logo__image-footer {
+  fill: $base-color;
+
+  &:hover {
+    fill: $pink;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $base-color;
+    opacity: 0.3;
+  }
+}
+
+.logo__image--tablet,
+.logo__image--desktop,
+.logo__image-footer--desktop {
+  display: none;
+}
+
+
 @media (min-width: $tablet-width) {
+  .logo__image {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
   .logo__footer {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .logo__image-footer {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
