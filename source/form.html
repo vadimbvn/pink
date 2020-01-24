@@ -4,22 +4,23 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--cloded">
       <div class="page-header__wrapper container">
         <h1 class="visually-hidden">Пинк - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
         <div class="page-header__logo__wrapper logo">
         <a class="logo__header" href="index.html">
-          <svg class="logo__image logo__image--mobile" width="75" height="23" viewBox="0 0 74.426 22.859">
-            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+          <svg class="logo__image logo__image--mobile" width="75" height="23"><use xlink:href="#logo-pink-white-mobile"></use>
           </svg>
-          <svg class="logo__image logo__image--tablet" width="147" height="41" viewBox="0 0 146.3 40.375">
-            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+          <svg class="logo__image logo__image--tablet" width="147" height="41"><use xlink:href="#logo-pink-white-tablet"></use>
           </svg>
-          <svg class="logo__image logo__image--desktop" width="147" height="41" viewBox="0 0 146.3 40.375">
-            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+          <svg class="logo__image logo__image--desktop" width="147" height="41"><use xlink:href="#logo-pink-white-desktop"></use>
           </svg>
         </a>
       </div>
@@ -75,11 +76,11 @@
               <legend>Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list form__list--checkbox">
                 <li>
-                  <input class="form__checkbox  visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
+                  <input class="form__checkbox  visually-hidden" type="checkbox" name="selfie" id="selfie" checked="">
                   <label class="form__custom-checkbox" for="selfie">Сделал селфи с акулой</label>
                 </li>
                 <li>
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked="">
                   <label class="form__custom-checkbox" for="beach">Обгорел на пляже</label>
                 </li>
                 <li>
@@ -91,7 +92,7 @@
                   <label class="form__custom-checkbox" for="gift">Накупил сувениров</label>
                 </li>
                 <li>
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked="">
                   <label class="form__custom-checkbox" for="tower">Удержал башню</label>
                 </li>
                 <li>
@@ -121,7 +122,7 @@
               <legend>С каким приложением путешествовали?</legend>
               <ul class="form__list form__list--radio">
                 <li>
-                  <input class="form__radio visually-hidden" type="radio" name="platform" id="pink-ios" checked>
+                  <input class="form__radio visually-hidden" type="radio" name="platform" id="pink-ios" checked="">
                   <label class="form__custom-radio" for="pink-ios">Pink для iOS</label>
                 </li>
                 <li>
@@ -150,11 +151,9 @@
     <footer class="page-footer">
       <div class=" page-footer__wrapper container">
         <a class="logo__footer logo" href="index.html">
-          <svg class="logo__image-footer logo__image-footer--mobile" width="147" height="41" viewBox="0 0 146.3 40.375">
-            <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+          <svg class="logo__image-footer logo__image-footer--mobile" width="147" height="41"><use xlink:href="#logo-pink-blue-mobile"></use>
           </svg>
-          <svg class="logo__image-footer logo__image-footer--desktop" width="147" height="41" viewBox="0 0 146.3 40.375">
-            <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+          <svg class="logo__image-footer logo__image-footer--desktop" width="147" height="41"><use xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
         </a>
         <div class="page-footer__social social">
@@ -173,9 +172,7 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
-            </svg>
+            <svg class="copyright__logo" width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
             <span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>
@@ -198,5 +195,6 @@
           <button class="pop-up__button button button--green" type="button">Закрыть окно</button>
       </div>
     </div>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
