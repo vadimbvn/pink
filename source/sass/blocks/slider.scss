@@ -79,5 +79,9 @@
     &:active {
       opacity: 0.1;
     }
+
+    &:focus {
+      border: 2px solid $navy;
+    }
   }
 }

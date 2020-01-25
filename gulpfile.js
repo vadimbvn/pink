@@ -27,6 +27,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest('build/css'))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -35,7 +36,11 @@ gulp.task("css", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}",
+    {
+      ignore: "source/img/logo-*.svg"
+    }
+)
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
@@ -79,9 +84,10 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "souce/*ico"
+    "source/*ico"
     ], {
-      base: "source"
+      base: "source",
+      ignore: "source/img/logo-*.svg"
     })
     .pipe(gulp.dest("build"));
 });

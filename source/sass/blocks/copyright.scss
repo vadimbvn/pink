@@ -20,6 +20,10 @@
   }
 }
 
+.copyright__link:focus svg {
+  outline: 2px solid $navy;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 18px;

@@ -146,6 +146,10 @@
   background-position: center;
 }
 
+.form__checkbox:focus + .form__custom-checkbox::before {
+  border: 2px solid $pink;
+}
+
 .form__radio:checked + .form__custom-radio::after {
   content: "";
   position: absolute;
@@ -156,6 +160,10 @@
   height: 15px;
   background-color: $pink;
   border-radius: 50%;
+}
+
+.form__radio:focus + .form__custom-radio::before {
+  border: 2px solid $pink;
 }
 
 .form__textarea {
@@ -427,6 +435,12 @@
     flex-wrap: wrap;
     align-content: space-between;
     height: 100%;
+  }
+
+  .form__list--checkbox li {
+    &:last-child {
+      margin-bottom: 52px;
+    }
   }
 
   .form__textarea {
